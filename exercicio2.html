@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 2</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        border: 0;
+      }
+
+      .card1 header {
+        border: 2px solid purple;
+        display: flex;
+        width: 50%;
+      }
+
+      .card1 header img {
+        width: 100%;
+      }
+
+      .card1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .descricao h1 {
+        text-align: center;
+      }
+
+      .descricao p {
+        text-align: center;
+      }
+
+      .tudo {
+        flex-direction: column;
+        gap: 30px;
+        display: flex;
+      }
+
+      @media screen and (min-width: 768px) {
+        .card1 {
+          flex-direction: row;
+          /* row: fila */
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        .tudo{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tudo">
+      <div class="card1">
+        <header>
+          <img src="galaxy-z-flip.jpg" alt="Samsung Galaxy Z Flip" />
+        </header>
+
+        <div class="descricao">
+          <h1>Smatphone Z flip</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            delectus?
+          </p>
+        </div>
+      </div>
+
+      <div class="card1">
+        <header>
+          <img src="galaxy-z-flip.jpg" alt="Samsung Galaxy Z Flip" />
+        </header>
+
+        <div class="descricao">
+          <h1>Smatphone Z flip</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            delectus?
+          </p>
+        </div>
+      </div>
+
+      <div class="card1">
+        <header>
+          <img src="galaxy-z-flip.jpg" alt="Samsung Galaxy Z Flip" />
+        </header>
+
+        <div class="descricao">
+          <h1>Smatphone Z flip</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            delectus?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
